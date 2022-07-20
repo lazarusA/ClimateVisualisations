@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Climate Visualisations done withe Makie.jl </h2>
+
+<h4>Click to open a new window with the application.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="population_app.html">
+      <img src="./imgs/world_population.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">world_population</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./imgs/energySources.png">
+      <img src="./imgs/energySources.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">energySources</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./imgs/fluxcom.png">
+      <img src="./imgs/fluxcom.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">fluxcom</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./imgs/lai.png">
+      <img src="./imgs/lai.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">lai</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./imgs/soil_moisture.png">
+      <img src="./imgs/soil_moisture.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">soil_moisture</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./imgs/tau_decomposition.png">
+      <img src="./imgs/tau_decomposition.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">tau_decomposition</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+<p> More to come</p>
+</div>
+
+</body>
+</html>
